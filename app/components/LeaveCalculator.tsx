@@ -87,7 +87,7 @@ const convertTimeToHours = (timeStr: string) => {
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">結束時間</label>
             <select 
-              className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black"
               value={endTime}
               onChange={(e) => {
                 setEndTime(e.target.value);
@@ -109,7 +109,7 @@ const convertTimeToHours = (timeStr: string) => {
 
           {hours !== null && (
             <div className="mt-4 p-4 bg-gray-50 rounded-md">
-              <p className="text-center font-medium">
+              <p className="text-center font-medium text-black">
                 請假時數：{hours.toFixed(1)} 小時
               </p>
             </div>
