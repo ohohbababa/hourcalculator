@@ -72,7 +72,7 @@ const convertTimeToHours = (timeStr: string) => {
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">開始時間</label>
             <select 
-              className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black"
               value={startTime}
               onChange={(e) => {
                 setStartTime(e.target.value);
