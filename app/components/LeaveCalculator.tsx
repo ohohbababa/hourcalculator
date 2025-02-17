@@ -6,7 +6,7 @@ const LeaveCalculator = () => {
   const [endTime, setEndTime] = useState('');
   const [hours, setHours] = useState(null);
 
-  const convertTimeToHours = (timeStr) => {
+const convertTimeToHours = (timeStr: string) => {
     const [hours, minutes] = timeStr.split(':').map(Number);
     return hours + minutes / 60;
   };
