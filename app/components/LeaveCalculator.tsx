@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const LeaveCalculator = () => {
   const [startTime, setStartTime] = useState('');
   const [endTime, setEndTime] = useState('');
-  const [hours, setHours] = useState(null);
+const [hours, setHours] = useState<number | null>(null);
 
 const convertTimeToHours = (timeStr: string) => {
     const [hours, minutes] = timeStr.split(':').map(Number);
